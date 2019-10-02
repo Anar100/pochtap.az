@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poçtap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Started Header -->
+    <section id="pnlHeader" class="header bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logoHolder">
+                        <a href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="callCenter">
+                        <img src="img/callcenter.png" alt="">
+                        <span>169</span>
+                    </div>
+                    <div class="langSection">
+                        <ul>
+                            <li class="active" data-lang="/az">
+                                <a href="#">AZ</a>
+                                <span class="fas fa-chevron-down icon-holder glyphicon"></span>
+                            </li>
+                            <li>
+                                <a href="#">RU</a>
+                                <span class="fas fa-chevron-down icon-holder glyphicon"></span>
+                            </li>
+                            <li>
+                                <a href="#">EN</a>
+                                <span class="fas fa-chevron-down icon-holder glyphicon"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="collapse-menu pull-right no-float-mobile">
+                        <div style="position: relative; z-index: 999;">
+                            <a href="#" id="btnLostMyDoc" class="lost-btn">
+                                <img src="img/search.png" alt="">
+                                Sənədimi itirmişəm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The end Header -->
+    <!-- Started Second header -->
+    <section class="header second-header">
+        <div class="map-bg">
+            <img src="img/map.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row header-second-row">
+                <div class="col-md-7 header-left vAlign">
+                    <div>
+                        <h1>
+                            İTİRİLMİŞ SƏNƏDLƏRİN<br>
+                            TAPILMASI XİDMƏTİ
+                        </h1>
+                        <ul class="list-about">
+                            <li>
+                                <span class="glyphicon fas fa-check-circle"></span>
+
+                                <p>İtirdiyiniz sənədinizin məlumatlarının sayta daxil edilməsi</p>
+                            </li>
+                            <li>
+                                <span class="glyphicon fas fa-check-circle"></span>
+
+                                <p>İtirdiyiniz sənədinizin tapılıb tapılmadığı haqqında məlumatın əldə edilməsi</p>
+                            </li>
+                            <li>
+                                    <span class="glyphicon fas fa-check-circle"></span>
+
+                                    <p>Tapılmış sənədinizi göstərilən poçt şöbəsinə yaxınlaşaraq təhvil götürülməsi</p>
+                            </li>
+                            <li>
+                                    <span class="glyphicon fas fa-check-circle"></span>
+
+                                    <p>Tapılmış sənədin istənilən poçt şöbəsinə təqdim edilməsi</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 header-right">
+                    <div>
+                        <div class="search-area text-center">
+                            <span>SƏNƏD AXTAR</span>
+                            <div class="pnlNote">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <p>Məlumatlar yalnız sənəddə olduğu kimi daxil edilməlidir.</p>
+                            </div>
+                            <select name="" id="">
+                                <option selected="selected" value="-1">- Sənədin qrupu -</option>
+                                <option value="10">Şəxsiyyət təsdiq edən sənədlər</option>
+                                <option value="15">Vəsiqələr</option>
+                                <option value="20">Təhsil sənədləri</option>
+                                <option value="25">Ədliyyə sənədləri</option>
+                                <option value="30">Məhkəmə sənədləri</option>
+                                <option value="35">Əmlak sənədləri</option>
+                                <option value="40">Vergi sənədləri</option>
+                                <option value="45">Nəqliyyat vasitələrinə aid sənədlər</option>
+                                <option value="50">Xarici vətəndaşlara aid sənədlər</option>
+                                <option value="55">Daxili İşlər Nazirliyi sənədləri</option>
+                                <option value="60">Gömrük sənədləri</option>
+                                <option value="95">Digər sənədlər</option>
+                            </select>
+                            <input type="text" placeholder="Soyadı *">
+                            <input type="text" placeholder="Adı *">
+                            <input type="submit" value="Axtar" class="search-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The end second header -->
+     <!-- Started Content Top -->
+     <section class="content-top">
+         <div class="container">
+             <div>
+                 <div class="">
+                     <h1>ƏN SON TAPILAN SƏNƏDLƏR</h1>
+                 </div>
+                 <div class="row">
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                         <a href="#" class="lost-box" style="display: block;">
+                            <div class="box-img-holder">
+                                <img src="img/passport.png" alt="">
+                            </div>
+                            <div class="box-text-holder">
+                                <span class="box-name">İSMAYIL CƏBİYEV</span>
+                                <br>
+                                <span>Şəxsiyyət vəsiqəsi 0-16 yaş şəkilsiz</span>
+                            </div>
+                        </a>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="lost-box" style="display: block;">
+                           <div class="box-img-holder">
+                               <img src="img/passport.png" alt="">
+                           </div>
+                           <div class="box-text-holder">
+                               <span class="box-name">MƏHƏMMƏD CƏBİYEV</span>
+                               <br>
+                               <span>Şəxsiyyət vəsiqəsi 0-16 yaş şəkilsiz</span>
+                           </div>
+                       </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="lost-box" style="display: block;">
+                           <div class="box-img-holder">
+                               <img src="img/passport.png" alt="">
+                           </div>
+                           <div class="box-text-holder">
+                               <span class="box-name">NURCAHAN CƏBİYEV</span>
+                               <br>
+                               <span>Şəxsiyyət vəsiqəsi 16 yaş yuxarı şəkilli</span>
+                           </div>
+                       </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="lost-box" style="display: block;">
+                           <div class="box-img-holder">
+                               <img src="img/passport.png" alt="">
+                           </div>
+                           <div class="box-text-holder">
+                               <span class="box-name">GÜLNARƏ CƏBİYEV</span>
+                               <br>
+                               <span>Şəxsiyyət vəsiqəsi 16 yaş yuxarı şəkilli</span>
+                           </div>
+                       </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="lost-box" style="display: block;">
+                           <div class="box-img-holder">
+                               <img src="img/passport.png" alt="">
+                           </div>
+                           <div class="box-text-holder">
+                               <span class="box-name">ÇİÇƏK ƏLƏKBƏROVA</span>
+                               <br>
+                               <span>Şəxsiyyət vəsiqəsi 16 yaş yuxarı şəkilli</span>
+                           </div>
+                       </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="lost-box" style="display: block;">
+                           <div class="box-img-holder">
+                               <img src="img/passport.png" alt="">
+                           </div>
+                           <div class="box-text-holder">
+                               <span class="box-name">LEYLA HÜNBƏTOVA</span>
+                               <br>
+                               <span>Şəxsiyyət vəsiqəsi 16 yaş yuxarı şəkilli</span>
+                           </div>
+                       </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="lost-box" style="display: block;">
+                           <div class="box-img-holder">
+                               <img src="img/passport.png" alt="">
+                           </div>
+                           <div class="box-text-holder">
+                               <span class="box-name">99?783</span>
+                               <br>
+                               <span>Avtomobil qeydiyyat nişanları</span>
+                           </div>
+                       </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="lost-box" style="display: block;">
+                           <div class="box-img-holder">
+                               <img src="img/passport.png" alt="">
+                           </div>
+                           <div class="box-text-holder">
+                               <span class="box-name">TƏRANƏ NURİYEVA</span>
+                               <br>
+                               <span>Yeni nəsil şəxsiyyət vəsiqəsi (AA)</span>
+                           </div>
+                       </a>
+                    </div>
+                 </div>
+                 <div class="row">
+                     <div class="more-result">
+                         <input type="submit"  value="DAHA ÇOX" class="load-more">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- The end Content Top -->
+     <!-- Started Content Bottom -->
+     <section class="content-bottom">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-4 steps">
+                     <div class="steps-holder">
+                         <img src="img/ico-1.png" alt="">
+                         <p>Sənədi tapan şəxs istənilən poçt şöbəsinə təhvil verir</p>
+                     </div>
+                 </div>
+                 <div class="col-md-4 steps">
+                    <div class="steps-holder">
+                        <img src="img/ico-2.png" alt="">
+                        <p>Poçt şöbəsi sənədin üzərində adı olan şəxsin məlumatlarını əldə edərək əlaqə qurmağa çalışır</p>
+                    </div>
+                </div>
+                <div class="col-md-4 steps">
+                    <div class="steps-holder">
+                        <img style="margin-bottom: 36px;" src="img/ico-3.png" alt="">
+                        <p>Əgər vətəndaşla əlaqə saxlanılmışdırsa vətəndaş ona deyilən poçt şöbəsinə yaxınlaşaraq sənədini əldə edə bilər</p>
+                    </div>
+                </div>
+             </div>
+         </div>
+     </section>
+     <!-- The end Content Bottom -->
+     <!-- Started Footer -->
+     <section id="pnlFooter" class="footer">
+         <div class="container">
+             <div class="row footer-holder">
+                 <div class="col-md-4">
+                     <div class="col-md-6 footer-logos">
+                         <img src="img/rytn.png" alt="" class="img-responsive">
+                     </div>
+                      <div class="col-md-6 footer-logos">
+                          <img src="img/taplogo.png" alt="" class="img-responsive">
+                      </div>
+                 </div>
+                 <div class="col-md-8">
+                     <div class="pull-right">
+                         <ul>
+                             <li class="bold-segeo">
+                                 <img src="img/call.png" alt="">
+                                 169
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- The end Footer -->
+</body>
+
+</html>
